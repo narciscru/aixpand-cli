@@ -1,4 +1,4 @@
-# aixp-cg
+# aixpan cli
 
 ``@aixpand/cli`` is a code generation tool for generating TypeScript serialization and deserialization code from a YAML schema file. It provides a command-line interface for generating code from the schema file and outputting it to a destination directory as class files.
 
