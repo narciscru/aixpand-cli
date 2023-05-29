@@ -1,0 +1,50 @@
+plugin:
+  TEST_1:
+    type: object
+    properties:
+      KEY_1:
+        type: string
+      KEY_2:
+        type: object
+        properties:
+          KEY_3:
+            type: string
+            nullable: true
+          KEY_4:
+            type: string
+          KEY_44:
+            type: array
+            nullable: true
+            items:
+              type: number
+      KEY_22:
+        type: array
+        items:
+          type: object
+          nullable: true
+          properties:
+            KEY_3:
+              type: string
+            KEY_4:
+              type: string
+                
+payload:
+  TEST_1:
+    type: object
+    properties:
+      KEY_5:
+        type: string
+      KEY_6:
+        type: object
+        properties:
+          KEY_7:
+            type: string
+          KEY_8:
+            type: number
+            nullable: true
+
+
+
+    
+
+

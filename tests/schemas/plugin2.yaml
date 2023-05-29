@@ -1,0 +1,37 @@
+plugin:
+  TEST_2:
+    type: object
+    properties:
+      KEY_1:
+        type: string
+      KEY_2:
+        nullable: true
+        type: object
+        properties:
+          KEY_3:
+            type: string
+          KEY_4:
+            type: string
+              
+payload:
+  TEST_2:
+    type: object
+    properties:
+      KEY_5:
+        type: string
+      KEY_6:
+        type: object
+        properties:
+          KEY_7:
+            type: string
+          KEY_8:
+            type: array
+            nullable: false
+            items:
+              type: number
+
+
+
+    
+
+
