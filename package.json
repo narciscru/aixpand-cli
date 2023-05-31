@@ -1,6 +1,6 @@
 {
   "name": "@aixpand/cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A library that generates domain objects for AiXpand network client",
   "author": "Aixpand Team",
   "private": false,

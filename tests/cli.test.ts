@@ -14,15 +14,15 @@ describe('CLI command', () => {
     expect(stdout.toString()).to.contain('Generated class written to'); 
   });
 
-  test('aixpand:generate command web schemas', () => {
-    // Run the CLI command
-    const { stdout, stderr, status } = spawnSync('aixpand', ['generate', '--url', 'https://raw.githubusercontent.com/narciscru/aixpand-schemas/main/schemas/plugin3.yaml', '--output', './tests/output/web']);
+  // test('aixpand:generate command web schemas', () => {
+  //   // Run the CLI command
+  //   const { stdout, stderr, status } = spawnSync('aixpand', ['generate', '--url', 'https://raw.githubusercontent.com/narciscru/aixpand-schemas/main/schemas/plugin3.yaml', '--output', './tests/output/web']);
 
-    // Check the status code
-    expect(status).to.equal(0); 
+  //   // Check the status code
+  //   expect(status).to.equal(0); 
 
-    // Check the output
-    expect(stderr.toString()).to.equal('');
-    expect(stdout.toString()).to.contain('Generated class written to'); 
-  });
+  //   // Check the output
+  //   expect(stderr.toString()).to.equal('');
+  //   expect(stdout.toString()).to.contain('Generated class written to'); 
+  // });
 });

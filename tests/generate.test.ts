@@ -1,6 +1,7 @@
 import {
   generatePluginInstanceObjects,
   generatePluginPayloadObjects,
+  getSchemaObjectProperties,
   parseYamlSchema,
 } from "../src/generate";
 import { readFileSync } from "fs";
@@ -25,6 +26,15 @@ test("generatePluginInstanceConfigs should generate domain objects correctly", (
 
   const generatedDomainObjects = generatePluginInstanceObjects(schema);
   expect(generatedDomainObjects.length).toEqual(1);
+});
+
+
+test("getSchemaObjectProperties should generate domain objects correctly", () => {
+  const schema = readSchemaFile(schemaPath);
+  const signature = Object.keys(schema.plugin)[0];
+
+  const generatedDomainObjects = getSchemaObjectProperties(schema['plugin'][signature]);
+  expect(generatedDomainObjects).toEqual(1);
 });
 
 
